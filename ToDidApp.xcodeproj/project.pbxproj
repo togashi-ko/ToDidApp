@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		102C68197A944CC7BE9213D0 /* Pods_ToDidAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012F13DE336ECD8340B09643 /* Pods_ToDidAppTests.framework */; };
+		7A5A95DC2015F44F00F47DA6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5A95DB2015F44F00F47DA6 /* TestObject.swift */; };
+		7A5A95DF2015FA5400F47DA6 /* TestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5A95DE2015FA5400F47DA6 /* TestRequest.swift */; };
+		7A69D5DA2056B0CA0073D644 /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A69D5D92056B0CA0073D644 /* ToDo.storyboard */; };
+		7A7D5BF2202D1A7F001C1B1C /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D5BF1202D1A7F001C1B1C /* CommonModel.swift */; };
+		7A7D5BF4202D52B3001C1B1C /* StaffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D5BF3202D52B3001C1B1C /* StaffCell.swift */; };
 		7AC82E1C2014B1BE00C2766A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC82E1B2014B1BE00C2766A /* Alamofire.framework */; };
 		7AC82E1E2014B1D000C2766A /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC82E1D2014B1D000C2766A /* ObjectMapper.framework */; };
 		7AC82E202014B1E100C2766A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC82E1F2014B1E100C2766A /* RxBlocking.framework */; };
 		7AC82E222014B1F000C2766A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC82E212014B1F000C2766A /* RxCocoa.framework */; };
 		7AC82E242014B20300C2766A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC82E232014B20300C2766A /* RxSwift.framework */; };
-		7AC82E3B2014B53200C2766A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC82E2F2014B53200C2766A /* ViewController.swift */; };
-		7AC82E3C2014B53200C2766A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC82E302014B53200C2766A /* TopViewController.swift */; };
 		7AC82E3D2014B53200C2766A /* RxDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC82E312014B53200C2766A /* RxDemoViewController.swift */; };
 		7AC82E3E2014B53200C2766A /* SelectActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC82E332014B53200C2766A /* SelectActionView.xib */; };
 		7AC82E3F2014B53200C2766A /* ActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC82E342014B53200C2766A /* ActionCell.xib */; };
@@ -27,12 +30,13 @@
 		7AC82E4A2014B57000C2766A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC82E492014B56F00C2766A /* Assets.xcassets */; };
 		7AC82E502014B57C00C2766A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC82E4C2014B57C00C2766A /* LaunchScreen.storyboard */; };
 		7AC82E512014B57C00C2766A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC82E4E2014B57C00C2766A /* Main.storyboard */; };
-		7AC82E552014B60B00C2766A /* MyActionFMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC82E532014B60B00C2766A /* MyActionFMDB.swift */; };
 		7AC82E562014B60B00C2766A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC82E542014B60B00C2766A /* MainViewModel.swift */; };
 		7AEC29DD2013828C00B13116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC29DC2013828C00B13116 /* AppDelegate.swift */; };
 		7AEC29E52013828C00B13116 /* ToDidApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC29E32013828C00B13116 /* ToDidApp.xcdatamodeld */; };
 		7AEC29F52013828C00B13116 /* ToDidAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC29F42013828C00B13116 /* ToDidAppTests.swift */; };
 		7AEC2A002013828C00B13116 /* ToDidAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC29FF2013828C00B13116 /* ToDidAppUITests.swift */; };
+		7AEC2E35202C9331001BC26D /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEC2E34202C9331001BC26D /* AlamofireObjectMapper.framework */; };
+		7AEC2E37202CA1DF001BC26D /* StaffObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEC2E36202CA1DF001BC26D /* StaffObject.swift */; };
 		A596761F4636C3E8AF2EA3E5 /* Pods_ToDidApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10915CD392367CC9DC2EE509 /* Pods_ToDidApp.framework */; };
 		CA32289A9CC09FFF39CA24C4 /* Pods_ToDidAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE831BF94A25D038F1572E /* Pods_ToDidAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,13 +64,16 @@
 		29C54EE416DE5A5AF6007E64 /* Pods-ToDidApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDidApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDidApp/Pods-ToDidApp.release.xcconfig"; sourceTree = "<group>"; };
 		5BDE831BF94A25D038F1572E /* Pods_ToDidAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDidAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7651CE0870508302647611A7 /* Pods-ToDidAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDidAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDidAppTests/Pods-ToDidAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A5A95DB2015F44F00F47DA6 /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
+		7A5A95DE2015FA5400F47DA6 /* TestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequest.swift; sourceTree = "<group>"; };
+		7A69D5D92056B0CA0073D644 /* ToDo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDo.storyboard; sourceTree = "<group>"; };
+		7A7D5BF1202D1A7F001C1B1C /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		7A7D5BF3202D52B3001C1B1C /* StaffCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffCell.swift; sourceTree = "<group>"; };
 		7AC82E1B2014B1BE00C2766A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7AC82E1D2014B1D000C2766A /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7AC82E1F2014B1E100C2766A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		7AC82E212014B1F000C2766A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		7AC82E232014B20300C2766A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		7AC82E2F2014B53200C2766A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7AC82E302014B53200C2766A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		7AC82E312014B53200C2766A /* RxDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDemoViewController.swift; sourceTree = "<group>"; };
 		7AC82E332014B53200C2766A /* SelectActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectActionView.xib; sourceTree = "<group>"; };
 		7AC82E342014B53200C2766A /* ActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionCell.xib; sourceTree = "<group>"; };
@@ -79,7 +86,6 @@
 		7AC82E492014B56F00C2766A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AC82E4D2014B57C00C2766A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AC82E4F2014B57C00C2766A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7AC82E532014B60B00C2766A /* MyActionFMDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyActionFMDB.swift; sourceTree = "<group>"; };
 		7AC82E542014B60B00C2766A /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		7AEC29D92013828C00B13116 /* ToDidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEC29DC2013828C00B13116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		7AEC29FB2013828C00B13116 /* ToDidAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDidAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEC29FF2013828C00B13116 /* ToDidAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDidAppUITests.swift; sourceTree = "<group>"; };
 		7AEC2A012013828C00B13116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AEC2E34202C9331001BC26D /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		7AEC2E36202CA1DF001BC26D /* StaffObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffObject.swift; sourceTree = "<group>"; };
 		D41E2ABD96F63190FC074672 /* Pods-ToDidApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDidApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDidApp/Pods-ToDidApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D8374C95F7116D733BFB6BFD /* Pods-ToDidAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDidAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDidAppUITests/Pods-ToDidAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7EE28596E3DB57047681984 /* Pods-ToDidAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDidAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDidAppTests/Pods-ToDidAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEC2E35202C9331001BC26D /* AlamofireObjectMapper.framework in Frameworks */,
 				7AC82E242014B20300C2766A /* RxSwift.framework in Frameworks */,
 				7AC82E222014B1F000C2766A /* RxCocoa.framework in Frameworks */,
 				7AC82E202014B1E100C2766A /* RxBlocking.framework in Frameworks */,
@@ -155,8 +164,6 @@
 		7AC82E2E2014B53200C2766A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7AC82E2F2014B53200C2766A /* ViewController.swift */,
-				7AC82E302014B53200C2766A /* TopViewController.swift */,
 				7AC82E312014B53200C2766A /* RxDemoViewController.swift */,
 			);
 			path = Controller;
@@ -173,6 +180,7 @@
 				7AC82E382014B53200C2766A /* ActionInputFormView.swift */,
 				7AC82E392014B53200C2766A /* DidTableViewCell.swift */,
 				7AC82E3A2014B53200C2766A /* SelectActionView.swift */,
+				7A7D5BF3202D52B3001C1B1C /* StaffCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,8 +188,10 @@
 		7AC82E462014B55700C2766A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7AC82E542014B60B00C2766A /* MainViewModel.swift */,
-				7AC82E532014B60B00C2766A /* MyActionFMDB.swift */,
+				7A5A95DB2015F44F00F47DA6 /* TestObject.swift */,
+				7AEC2E36202CA1DF001BC26D /* StaffObject.swift */,
+				7A5A95DE2015FA5400F47DA6 /* TestRequest.swift */,
+				7A7D5BF1202D1A7F001C1B1C /* CommonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +199,7 @@
 		7AC82E472014B56200C2766A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7AC82E542014B60B00C2766A /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +217,7 @@
 			children = (
 				7AC82E4C2014B57C00C2766A /* LaunchScreen.storyboard */,
 				7AC82E4E2014B57C00C2766A /* Main.storyboard */,
+				7A69D5D92056B0CA0073D644 /* ToDo.storyboard */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -268,6 +280,7 @@
 		CFBDD0096A01F44BAA087F6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AEC2E34202C9331001BC26D /* AlamofireObjectMapper.framework */,
 				7AC82E232014B20300C2766A /* RxSwift.framework */,
 				7AC82E212014B1F000C2766A /* RxCocoa.framework */,
 				7AC82E1F2014B1E100C2766A /* RxBlocking.framework */,
@@ -401,6 +414,7 @@
 				7AC82E3E2014B53200C2766A /* SelectActionView.xib in Resources */,
 				7AC82E4A2014B57000C2766A /* Assets.xcassets in Resources */,
 				7AC82E512014B57C00C2766A /* Main.storyboard in Resources */,
+				7A69D5DA2056B0CA0073D644 /* ToDo.storyboard in Resources */,
 				7AC82E502014B57C00C2766A /* LaunchScreen.storyboard in Resources */,
 				7AC82E3F2014B53200C2766A /* ActionCell.xib in Resources */,
 			);
@@ -487,6 +501,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 			);
 			name = "Carthage Run Script";
 			outputPaths = (
@@ -608,13 +623,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC82E3C2014B53200C2766A /* TopViewController.swift in Sources */,
 				7AC82E432014B53200C2766A /* ActionInputFormView.swift in Sources */,
-				7AC82E3B2014B53200C2766A /* ViewController.swift in Sources */,
+				7A7D5BF2202D1A7F001C1B1C /* CommonModel.swift in Sources */,
+				7A7D5BF4202D52B3001C1B1C /* StaffCell.swift in Sources */,
 				7AC82E3D2014B53200C2766A /* RxDemoViewController.swift in Sources */,
+				7A5A95DF2015FA5400F47DA6 /* TestRequest.swift in Sources */,
+				7AEC2E37202CA1DF001BC26D /* StaffObject.swift in Sources */,
 				7AC82E452014B53200C2766A /* SelectActionView.swift in Sources */,
-				7AC82E552014B60B00C2766A /* MyActionFMDB.swift in Sources */,
 				7AC82E442014B53200C2766A /* DidTableViewCell.swift in Sources */,
+				7A5A95DC2015F44F00F47DA6 /* TestObject.swift in Sources */,
 				7AC82E422014B53200C2766A /* StopActionView.swift in Sources */,
 				7AC82E412014B53200C2766A /* ActionCell.swift in Sources */,
 				7AEC29E52013828C00B13116 /* ToDidApp.xcdatamodeld in Sources */,

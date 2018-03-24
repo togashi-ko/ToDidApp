@@ -10,15 +10,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-let disposeBag = DisposeBag()
-
-class RxDemoViewController: UIViewController {
+class RxDemoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var textLabel: UILabel!
-    
+    @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var testButton: UIButton!
+
+    var viewModel = MainViewModel()
+    private let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        settingObject()
         bind()
     }
 
@@ -26,12 +29,39 @@ class RxDemoViewController: UIViewController {
         super.didReceiveMemoryWarning()
 
     }
+    func settingObject() {
+        listTableView.delegate = self
+        listTableView.dataSource = self
+        
+    }
     
     func bind() {
-        textField.rx.text                  // 4. rx_textは後述
-            .map {"(入力確認:\(String(describing: $0)))"}                // 5. 変更があった要素に「」つけて
-            .bind(to: textLabel.rx.text)         // 6. labelに反映
-            .disposed(by: disposeBag)    // 7. 不要になったらunsubscribe
+        viewModel.myActionList.asObservable()
+            .skip(1) //初回bind時はシカト
+            .subscribe( onNext: { _ in
+                self.listTableView.reloadData()
+            })
+            .disposed(by: disposeBag)
     }
-
+    
+    @IBAction func tapTestButton(_ sender: Any) {
+        viewModel.testRequest()
+    }
+    
+    // MARK: - UITableViewDataSource
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.myActionList.value.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: StaffCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! StaffCell
+        let staff: StaffObject = viewModel.myActionList.value[indexPath.row]
+        cell.configure(object: staff)
+        return cell
+    }
 }
